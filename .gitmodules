@@ -103,3 +103,15 @@
 [submodule "pack/levicole/start/vipsql"]
 	path = pack/levicole/start/vipsql
 	url = git@github.com:martingms/vipsql.git
+[submodule "pack/levicole/start/vim-cucumber"]
+	path = pack/levicole/start/vim-cucumber
+	url = git@github.com:tpope/vim-cucumber.git
+[submodule "pack/levicole/start/vim-hashrocket"]
+	path = pack/levicole/start/vim-hashrocket
+	url = git@github.com:hashrocket/vim-hashrocket.git
+[submodule "pack/levicole/start/vim-blockle"]
+	path = pack/levicole/start/vim-blockle
+	url = git@github.com:jgdavey/vim-blockle.git
+[submodule "pack/levicole/start/dbext.vim"]
+	path = pack/levicole/start/dbext.vim
+	url = git@github.com:vim-scripts/dbext.vim.git
