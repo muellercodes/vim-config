@@ -115,3 +115,15 @@
 [submodule "pack/levicole/start/dbext.vim"]
 	path = pack/levicole/start/dbext.vim
 	url = git@github.com:vim-scripts/dbext.vim.git
+[submodule "pack/levicole/start/vim-jsx"]
+	path = pack/levicole/start/vim-jsx
+	url = git@github.com:mxw/vim-jsx.git
+[submodule "pack/levicole/start/emmet-vim"]
+	path = pack/levicole/start/emmet-vim
+	url = git@github.com:mattn/emmet-vim.git
+[submodule "pack/levicole/start/html5.vim"]
+	path = pack/levicole/start/html5.vim
+	url = git@github.com:othree/html5.vim.git
+[submodule "pack/levicole/start/vim-pug"]
+	path = pack/levicole/start/vim-pug
+	url = git@github.com:digitaltoad/vim-pug.git

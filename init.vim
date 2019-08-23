@@ -79,7 +79,7 @@ augroup file_type_settings
   autocmd FileType asm setlocal shiftwidth=8 tabstop=8 expandtab
   autocmd BufNewFile,BufRead *.haml             set ft=haml
   autocmd FileType javascript             setlocal et sw=2 sts=2 isk+=$
-  autocmd FileType html,xhtml,css         setlocal et sw=2 sts=2
+  autocmd FileType html,xhtml,css,pug     setlocal et sw=2 sts=2
   autocmd FileType eruby,yaml,ruby        setlocal et sw=2 sts=2 omnifunc=rubycomplete#Complete
   autocmd FileType cucumber               setlocal et sw=2 sts=2
   autocmd FileType gitcommit              setlocal spell
@@ -156,6 +156,13 @@ map <leader>pf :FZF<CR>
 map <leader>/ :Ag<CR>
 
 imap dt5 <!DOCTYPE html>
+
+let g:user_emmet_leader_key='<Tab>'
+let g:user_emmet_settings = {
+  \  'javascript.jsx' : {
+    \      'extends' : 'jsx',
+    \  },
+  \}
 
 " Open my vimrc like I would open my .spacemacs config
 " Like I said, spacemacs ruined me ;)
