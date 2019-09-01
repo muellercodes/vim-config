@@ -127,3 +127,6 @@
 [submodule "pack/levicole/start/vim-pug"]
 	path = pack/levicole/start/vim-pug
 	url = git@github.com:digitaltoad/vim-pug.git
+[submodule "pack/levicole/start/ale"]
+	path = pack/levicole/start/ale
+	url = git@github.com:dense-analysis/ale.git

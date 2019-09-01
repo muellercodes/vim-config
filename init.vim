@@ -157,12 +157,28 @@ map <leader>/ :Ag<CR>
 
 imap dt5 <!DOCTYPE html>
 
+" Adds Emmet support with tab + , completion.
 let g:user_emmet_leader_key='<Tab>'
 let g:user_emmet_settings = {
   \  'javascript.jsx' : {
     \      'extends' : 'jsx',
     \  },
   \}
+let g:ale_fixers = {
+\   'javascript': ['prettier'],
+\   'css': ['prettier'],
+\}
+let g:ale_javascript_prettier_options = '--double-quote --trailing-comma es5'
+
+
+
+" Eslint support and config
+let g:ale_sign_error = '●' " Less aggressive than the default '>>'
+let g:ale_sign_warning = '.'
+let g:ale_lint_on_enter = 0 " Less distracting when opening a new file
+
+" Set this. Airline will handle the rest.
+let g:airline#extensions#ale#enabled = 1
 
 " Open my vimrc like I would open my .spacemacs config
 " Like I said, spacemacs ruined me ;)
@@ -181,7 +197,7 @@ endif
 
 set number
 
-colorscheme nova
+colorscheme slate
 set background=dark
 
 if $TERM == '^\%(screen\|xterm-color\)$' && t_Co == 8
